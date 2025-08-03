@@ -11,17 +11,21 @@ $(function(){
 		e.preventDefault()
 	})
 
-	$('.list-page a.txt-links').click(function(e){
+	$('.list-page a').click(function(e){
 		var $this = $(this)
 		var $href = $this.attr('href')
 		//msg_trigger('msg-detail',$href)
-		$list_scrollTop = $('html,body').scrollTop()
-		$('.list-page').removeClass('active')
-		$('#list-detail').addClass('active')
-		$('#list-detail-img').attr('src','')
-		$('#list-detail-img').attr('src',$href)
-		$('body,html').animate({scrollTop:0},0)
-		e.preventDefault()
+
+		if($this.hasClass('out-links')){
+		}else{
+			$list_scrollTop = $('html,body').scrollTop()
+			$('.list-page').removeClass('active')
+			$('#list-detail').addClass('active')
+			$('#list-detail-img').attr('src','')
+			$('#list-detail-img').attr('src',$href)
+			$('body,html').animate({scrollTop:0},0)
+			e.preventDefault()
+		}
 	})
 
 	$('#list-detail-close').click(function(){
