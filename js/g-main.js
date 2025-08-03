@@ -11,7 +11,7 @@ $(function(){
 		e.preventDefault()
 	})
 
-	$('.list-page a').click(function(e){
+	$('.list-page a.txt-links').click(function(e){
 		var $this = $(this)
 		var $href = $this.attr('href')
 		//msg_trigger('msg-detail',$href)
