@@ -1,6 +1,8 @@
 /* main.css ==============================================*/
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Nunito+Sans:opsz,wght@6..12,1000&display=swap')
+//@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Nunito+Sans:opsz,wght@6..12,100..1000&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Roboto+Slab:wght@100..900&display=swap')
+
 
 /*Variable*/
 $blue: #1166f5
@@ -49,7 +51,7 @@ $yellow: #f5c225
 *:focus
 	outline: none
 a
-	color: #444
+	color: #292a35
 	text-decoration: none
 	transition: color .4s
 a:hover
@@ -340,11 +342,11 @@ a:hover
 
 // .counter
 // 	position: relative
-// 	height: 2vw
+// 	height: 2rem
 // 	height: 40px
 // 	//background-color: red
 // 	overflow: hidden
-// 	//width: 6vw
+// 	//width: 6rem
 // 	display: flex
 // 	justify-content: center
 // 	*
@@ -361,7 +363,7 @@ a:hover
 // 		&:nth-child(2)
 // 			transition-duration: 1.2s
 // 		&:nth-child(3)
-// 			transition-duration: 1.4s
+// 			transition-duration: 1.
 // 		&:nth-child(4)
 // 			transition-duration: 1.6s
 // 		&:nth-child(5)
@@ -378,7 +380,7 @@ a:hover
 // 			transition-duration: 2.8s
 // 		> span
 // 			display: block
-// 			//font-size: 2.2vw
+// 			//font-size: 2.2rem
 // 			font-size: 40px
 // 			color: #fff
 			
@@ -386,7 +388,7 @@ a:hover
 // 			line-height: 1
 // 	>span
 // 		display: block
-// 		//font-size: 2.2vw
+// 		//font-size: 2.2rem
 // 		font-size: 40px
 // 		color: #fff		
 // 		font-weight: normal
@@ -883,21 +885,21 @@ body
 			h2
 
 // #g-nav-trigger
-// 	width: 12.5vw
-// 	height: 12.5vw
-// 	border-bottom-left-radius: 2.3vw
-// 	border-bottom-right-radius: 2.3vw
+// 	width: 12.5rem
+// 	height: 12.5rem
+// 	border-bottom-left-radius: 2.3rem
+// 	border-bottom-right-radius: 2.3rem
 // 	position: fixed
 // 	top: 0
-// 	right: 1.6vw
+// 	right: 1.6rem
 // 	background: #fff
 // 	cursor: pointer
 // 	z-index: 4
 // 	//display: none
-// 	box-shadow: 0 1vw 1vw rgba(#000,.1)
+// 	box-shadow: 0 1rem 1rem rgba(#000,.1)
 // 	p
-// 		font-size: 2.7vw
-// 		margin-top: 6.5vw
+// 		font-size: 2.7rem
+// 		margin-top: 6.5rem
 // 	>div
 // 		right: 31%
 // 		height: 3px
@@ -992,7 +994,8 @@ body
 	padding: 1rem 3.2rem
 	overflow: hidden
 	// background-color: yellow
-	background: url(../img/bg8.jpg) repeat fixed
+	background: url(../img/bg10.jpg) repeat fixed
+	// background: #F1EAE0
 	background-size: 100%
 
 
@@ -1000,16 +1003,19 @@ body
 	display: flex
 	justify-content: space-between
 	align-items: center
-	padding-bottom: 1.2rem
+	padding-bottom: 1.5rem
 	flex-direction: column
 
 	h1
 		font-size: 0
-		font-weight: 900
-		font-family: "Nunito Sans"
+		font-weight: 600
+		//font-family: "Nunito Sans"
+		font-family: "Roboto Slab"
+		
 		span
-			font-size: 8rem
-			color: #000
+			font-size: 5.5rem
+			//color: #ba5601
+			color: #292a35
 		.space
 			width: 3rem
 			display: inline-block
@@ -1031,7 +1037,7 @@ body
 			content: ''
 			width: 0
 			height: 0.08rem
-			background: #000
+			background: #292a35
 			position: absolute
 			top: 50%
 			left: 0
@@ -1056,7 +1062,7 @@ body
 		// justify-content: space-between
 
 		display: grid
-		grid-template-columns: repeat(auto-fill, 30.8rem)
+		grid-template-columns: repeat(auto-fill, 33.33%)
 		grid-gap: 0rem
 		justify-content: space-between
 
@@ -1068,7 +1074,7 @@ body
 	.img
 		position: relative
 		overflow: hidden
-		border-radius: 1vw
+		border-radius: 1rem
 		
 		img
 			width: 100%
@@ -1093,6 +1099,125 @@ body
 				&:nth-of-type(#{$i})
 					animation-delay: $i * .05s
 
+.detail-page
+	// outline: 1px solid red
+	width: 82%
+	margin: 0 auto
+	padding: 3rem 3rem 3rem 3rem
+	background: #ffffff
+	border-top: 1px solid #666
+	img
+		max-width: 100%
+		outline: 1px solid #d3d3d3
+	h4
+		letter-spacing: .1rem
+		font-size: 1rem
+		color: #c0bdbd
+	h3
+		font-size: 1.8rem
+		letter-spacing: .1rem
+		margin: .5rem auto 2rem auto
+		color: #666666
+
+		
+	.text
+		margin: 2rem auto 6rem auto
+		justify-content: space-between
+		text-align: center
+	
+		p
+			color: #666666
+			font-weight: 300
+			letter-spacing: .1rem
+			font-size: 1rem
+			line-height: 1.6
+			
+		.out-links-but
+			display: flex
+			align-items: center
+			justify-content: center
+			width: 8rem
+			height: 8rem
+			border: solid 1px #292a35
+			border-radius: 100rem	
+			margin: 2rem auto 0
+			background: #292a35
+			
+			span
+				font-size: 1rem
+				color: #fff
+
+				&:before
+					content: ''
+					width: 2.5rem
+					height: 2.5rem
+					background: url(../img/link.svg) no-repeat
+					background-size: 100%
+					display: block
+					margin: 0 auto
+					transition: .4s
+
+
+			&:hover
+				box-shadow: 0 0 2rem rgba(#292a35,.3)
+				span
+					color: #999
+					&:before
+						transform: scale(1.1)
+
+			
+		
+	
+	.listname
+		font-family: "Roboto Slab"
+		font-weight: 400
+		font-size: 2rem
+		color: #000
+
+		&:after
+			content: ''
+			width: 3rem
+			border-bottom: 1px solid #000
+			display: block
+			margin: 1rem auto 3rem auto
+
+	.pc-profile
+		display: flex
+		justify-content: space-evenly
+		margin-bottom: 6rem
+		img
+			width: 45%
+	.one_list
+		img
+			width: 80%
+
+	.mo-profile
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		margin-bottom: -2rem
+		img
+			width: 25%
+			margin-left: 1rem
+			margin-right: 1rem
+			margin-bottom: 4rem
+
+	.conclusion
+		color: #d3d3d3
+		font-weight: 400
+		letter-spacing: 0.1rem
+		font-size: 1rem
+		line-height: 1.6
+		border-top: 1px solid #d3d3d3
+		border-bottom: 1px solid #d3d3d3
+		padding: .5rem .2rem
+		margin-top: 4rem
+		background: #fbfbfb
+
+	
+
+	
+
 #list-all,#list-web,#list-graphic,#list-banner	
 	>ol
 		>li
@@ -1102,19 +1227,24 @@ body
 			backdrop-filter: blur(0.2rem)
 			border: 1px solid #fff
 			box-shadow: inset 0rem 0rem 1.5rem rgba(0, 0, 0, 0.20)
-			padding: 2vw
-			border-radius: 2.5vw
+			padding: 2rem
+			border-radius: 2.5rem
 			text-align: left
 			position: relative
 			
 
 	.txt-links
 		display: block
-		margin-bottom: 1vw
+		margin-bottom: 1rem
+		h3
+			width: 100%
+			padding-right: 2rem
+			span
+				
 
 		
 	.img
-		margin-bottom: 2vw
+		margin-bottom: 2rem
 		img
 			transform: scale(1)
 		&:hover
@@ -1140,9 +1270,9 @@ body
 		transition: .3s
 		color: #fff
 		text-shadow: 0 0 2rem #000
-		border-radius: 1vw
+		border-radius: 1rem
 		text-align: center
-		padding: 3vw
+		padding: 3rem
 		h2
 			font-size: 1rem
 		small
@@ -1158,47 +1288,47 @@ body
 			font-size: 1.5rem
 			display: flex
 			justify-content: space-between
-			margin-bottom: 0.1rem
+			margin-bottom: 0.3rem
 			position: relative
 			display: inline-block
 			font-weight: 400
 
-			&::after
-				content: ""
-				width: 0
-				height: 1px
-				background-color: #000
-				position: absolute
-				top: 100%
-				left: 0
-				transition: .3s
+			span
+				position: relative
+
+				&::after
+					content: ""
+					width: 0
+					height: 1px
+					background-color: #000
+					position: absolute
+					top: 90%
+					left: 0
+					transition: .3s
 
 		p
 			color: #767676
-			font-size: 0.8rem
+			font-size: 0.9rem
 			letter-spacing: 0.1rem
 			transition: .1s
 			font-weight: 250
 	a.txt-links
 		&:hover
 			h3
-				&::after
-					width: 100%
+				span
+					&::after
+						width: 100%
 			p
 				opacity: .5
-				
-
-		
-	
 
 	.out-links
-		background: url(../img/link.svg) 50% 50% no-repeat #000
+		background: url(../img/link.svg) 46% 50% no-repeat #292a35
 		background-size: 60%
 		display: block
-		width: 29px
-		height: 29px
+		width: 2rem
+		height: 2rem
 		position: absolute
-		top: 18.5rem
+		top: 19.2rem
 		right: 2rem
 		z-index: 1
 		border-radius: 50%
@@ -1207,22 +1337,20 @@ body
 		&:hover
 			background-color: #6f6f6f
 			transform: scale(1.1)
-
 			
 			
 	.tag
 		display: flex
 		align-items: center
 		justify-content: left
-		
 		span
-			font-size: 0.8rem
-			color: #444444ff
+			font-size: 0.9rem
+			color: #292a35
 			line-height: 1
-			padding: 3px 10px
+			padding: 0.3rem 0.7rem
 			border: 1px solid #0000001a
-			border-radius: 5vw
-			margin-right: 0.3vw
+			border-radius: 5rem
+			margin-right: 0.3rem
 			background-color: #fff
 			font-weight: 400
 	
@@ -1230,9 +1358,9 @@ body
 		width: 50px
 		height: 50px
 		background-color: rgba(255, 50, 162, 0.9)
-		border-radius: 5vw
+		border-radius: 5rem
 		display: block
-		font-size: 0.8rem
+		font-size: 0.9rem
 		color: #fff
 		text-align: center
 		align-content: center
@@ -1274,43 +1402,55 @@ body
 #list-about
 	display: flex
 	padding-bottom: 5rem
+	justify-content: center
+
 	.img
-		width: 50%
+		width: 30%
 		img
-			margin-left: -3.2rem
+			margin-right: 0
+			width: 30%
+			margin-bottom: 2rem
+
+	.text-iam-patty
+		width: 20rem
+		height: 10rem
+		background: url(../img/text-i-am-patty.svg) no-repeat center top
+		background-size: 100%
+		display: block
+		text-indent: -9999px
+		margin-bottom: 1rem
+
+	.text-name
+		width: 17rem
+		height: 2.5rem
+		background: url(../img/text-name.svg) no-repeat center top
+		background-size: 100%
+		display: block
+		text-indent: -9999px
+		margin: 1rem 0 2rem
+		
 	.txt
-		width: 50%
+		width: 35%
 		text-align: left
-		.text-iam-patty
-			width: 20rem
-			height: 10rem
-			background: url(../img/text-i-am-patty.svg) no-repeat center top
-			background-size: 100%
-			display: block
-			text-indent: -9999px
-			margin-bottom: 1rem
-		.text-name
-			width: 17rem
-			height: 2.5rem
-			background: url(../img/text-name.svg) no-repeat center top
-			background-size: 100%
-			display: block
-			text-indent: -9999px
-			margin: 5rem 0 3rem
+		
 	h3
 		font-size: 1.5rem
 		margin-top: 3rem
-		font-weight: bold
+		font-weight: 500
+		color: #292a35
+		margin-bottom: 0.2rem
+
 	h4
 		font-size: 1.5rem
-		font-weight: bold
+		font-weight: 500
 		color: $red
+		margin-bottom: 0.4rem
 	dl
 		display: flex
 		flex-wrap: wrap
-		width: 30rem
+		width: 50rem
 		dt
-			width: 60%
+			width: 30%
 			&:before
 				content: ''
 				width: .5rem
@@ -1320,7 +1460,7 @@ body
 				display: inline-block
 				margin-right: .5rem
 		dd
-			width: 40%
+			width: 70%
 			font-size: .9rem
 		&~h4
 			margin-top: 1rem
@@ -1354,7 +1494,7 @@ body
 			&:hover
 				transform: scale(1) rotate(90deg)
 
-#list-detail-close
+#list-detail-close,.close
 	cursor: pointer
 	position: fixed
 	top: 10rem
@@ -1366,12 +1506,16 @@ body
 	border: .1rem solid #000
 	background-size: 45%
 	border-radius: 50%
-	opacity: 0
+	// opacity: 0
 	//box-shadow: .5rem .5rem 1rem rgba(#000,.2), inset .2rem .2rem 1rem rgba(#000,.2)
-	transform: scale(0)
+	// transform: scale(0)
 	transition: .5s
 	transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275)
 	z-index: 5
+	&:hover
+		transform: rotate(90deg)
+		opacity: 0.5
+
 
 #g-footer
 	padding: 2rem 0 0
@@ -1379,24 +1523,99 @@ body
 	letter-spacing: 0.1rem
 
 
+.context
+	width: 80%
+	margin: 0 auto
+	color: #666666
+	font-weight: 300
+	letter-spacing: 0.1rem
+	font-size: 1rem
+	text-align: justify
+
+	h6
+		line-height: 2
+		color: #000
+	p
+		line-height: 1.6
+
+.textlist
+	color: #000
+	font-weight: 400
+	letter-spacing: 0.1rem
+	font-size: 1rem
+	margin-bottom: 2rem
+
+.w80
+	width: 80%
+	margin: 0 auto
+
+.w90
+	width: 90%
+	margin: 0 auto
+
+
+[class^=img-row-]
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	margin-bottom: 5rem
+
+.jcc
+	justify-content: center
+.aic
+	align-items: center
+.ais
+	align-items: start
+
+
+.img-row-1
+	img
+		width: 100%
+
+.img-row-2
+	img
+		width: 49.5%
+
+
+.img-row-3
+	img
+		width: 32.5%
+		margin-bottom: 0.6rem
+
+.img-row-4
+	img
+		width: 49.5%
+		margin-bottom: 0.6rem
+
+.img-row-4s
+	img
+		width: 24%
+
+.img-row-6
+	img
+		width: 32.5%
+		margin-bottom: 0.6rem
+
+
+
 @media screen and (min-width: 900px)
 	.is-m
 		display: none !important
 
-@media screen and (max-width: 1200px)
-	html
-		font-size: 1.5vw
+// @media screen and (max-width: 1200px)
+// 	html
+// 		font-size: 1.2rem
 
-	#list-about
-		.column
-			display: block
-			>div
-				&:last-child
-					margin-top: 1rem
+// 	#list-about
+// 		.column
+// 			display: block
+// 			>div
+// 				&:last-child
+// 					margin-top: 1rem
 
-	.list-page
-		>ol
-			grid-template-columns: repeat(auto-fill, 30.8%)
+// 	.list-page
+// 		>ol
+// 			grid-template-columns: repeat(auto-fill, 30.8%)
 
 	// #list-banner
 	// 	padding: 0 9rem
@@ -1406,24 +1625,80 @@ body
 		display: none !important
 
 	html
-		font-size: 3vw
+		font-size: 4vw
 
 	#g-wrap
-		padding: 1.5rem
+		padding: 1rem
+		overflow: visible
 
 	#g-header
 		display: block
 		h1
 			span
+				font-size: 2rem
 			.space
+				display: block
+		
+		//手機版點擊開合效果
+		&.active
+			#g-nav
+				// transform: translateX(0)
+				left: 0
+				opacity: 1
+				pointer-events: auto
+			#mo_menu
+				padding-top: 0.7rem
+				>div
+					width: 60%
+					margin-top: 0.1rem
+					margin-left: .85rem
+					&:first-child
+						transform-origin: 0 0
+						transform: rotate(45deg)
+					&:nth-child(2)
+						opacity: 0
+					&:nth-child(3)
+						transform-origin: 5% 100%
+						transform: rotate(-45deg)
+						
+	#mo_menu
+		width: 3rem
+		height: 3rem
+		// outline: solid 1px red
+		position: fixed
+		right: 0.5rem
+		top: 1.5rem
+		z-index: 4
+		border: 1px solid #000
+		border-radius: 50rem
+		padding-top: .8rem
+
+		>div
+			width: 55%
+			height: 1px
+			background: #000
+			margin-bottom: .5rem
+			margin-left: 0.65rem
+			transition: .2s
 
 	#g-nav
-		margin: 1rem 0 3rem
+		position: absolute
+		top: 0
+		left: 100%
+		width: 100%
+		background: #eee
+		height: 100vh
+		// transform: translateX(10%)
+		opacity: 0
+		pointer-events: none
+		transition: .2s
+		z-index: 3
 		ol
-			flex-wrap: wrap
-			justify-content: center
+			display: block
+			margin-top: 10rem
+		li
 		a
-			margin: .2rem 1.5rem
+			margin: 3rem 1.5rem
 			display: block
 			&:hover,&.active
 				color: $red
@@ -1431,93 +1706,101 @@ body
 					height: 0.1rem
 					background-color: $red
 
-	.list-page
-		>ol
-			grid-template-columns: repeat(auto-fill, 30.8%)
 
 	#list-all,#list-web,#list-graphic,#list-banner
 		>ol
+			grid-template-columns: repeat(auto-fill, 100%)
 			>li
-				//width: 48%
-		.txt
-			position: static
-			opacity: 1
-			display: block
-			color: #000
-			text-shadow: none
+				margin-bottom: 1rem
+
+		.out-links
+			top: 14.6rem
+			width: 2.3rem
+			height: 2.3rem
+
+
+	.close
+		width: 3rem
+		height: 3rem
+		border: 1px solid #000
+		position: sticky
+		top: 1rem
+		left: 25rem
+		display: block
+		background-color: #fff
+
+	.detail-page
+		width: 100%
+		padding: 1rem 1rem 1rem 1rem
+
+		.text
 			text-align: left
-			transform: scale(1)
-			padding-top: .5rem
-			h2
-				font-size: 1.2rem
-			p
-				font-size: 0.7rem
 
-	// #list-banner
-	// 	padding: 0 0rem
-	// 	>ol
-	// 		grid-template-columns: repeat(auto-fill, 30.8%)
-	// 		>li
-	// 			//width: 47%
-	// 			margin: 0 0% 1.5rem
-	// 	.txt
-	// 		padding-top: 0.5rem
+		// .pc-profile
+		// 	img
+		// 		margin-left: 0.5rem
+		// 		margin-right: 0.5rem
 
-	#list-logo
-		padding: 0 0rem
-		>ol
-			grid-template-columns: repeat(auto-fill, 30.8%)
-			>li
-				//width: 45%
-				margin: 0 0% 1.5rem
-		.txt
-			padding-top: 0.5rem
+		// .mo-profile
+		// 	margin-bottom: -1rem
+		// 	img
+		// 		width: 45%
+		// 		margin-left: 0.5rem
+		// 		margin-right: 0.5rem
+		// 		margin-bottom: 1.2rem
 
 	#list-about
-		display: block
+		flex-wrap: wrap
+		padding-bottom: 0
+
 		.img
-			width: 112%
-			img
-				margin-left: -5%
-		.txt
 			width: 90%
-			margin-top: 2rem
-			margin-left: 5%
-			.text-iam-patty
-				width: 17rem
-				height: 8rem
-
-	#list-detail-close
-		position: absolute
-		top: -2rem
-		right: -.5rem
-		// top: 22rem
-		// right: .5rem
-
-
-@media screen and (max-width: 400px)
+			img
+				margin: 0 auto
 	
-	.list-page
-		>ol
-			grid-template-columns: repeat(auto-fill, 100%)
+		.txt
+			width: 100%
 
-	#list-all,#list-web,#list-graphic,#list-banner
-		>ol
-			>li
+			p
+				text-align: center
+
+			dl
 				width: 100%
 
-	// #list-banner
-	// 	>ol
-	// 		grid-template-columns: repeat(auto-fill, 100%)
-	// 		>li
-	// 			width: 100%
-
-	#list-logo
-		padding: 0
-		>ol
-			grid-template-columns: repeat(auto-fill, 100%)
-			>li
+				dd
+					margin-bottom: 0.5rem
+					padding-left: 1.3rem
+					width: 100%
+				
+			dt
 				width: 100%
-				margin: 0 0% 1.5rem
+				margin-bottom: 0.1rem
+				
+
+
+// @media screen and (max-width: 400px)
+	
+// 	.list-page
+// 		>ol
+// 			grid-template-columns: repeat(auto-fill, 100%)
+
+// 	#list-all,#list-web,#list-graphic,#list-banner
+// 		>ol
+// 			>li
+// 				width: 100%
+
+// 	// #list-banner
+// 	// 	>ol
+// 	// 		grid-template-columns: repeat(auto-fill, 100%)
+// 	// 		>li
+// 	// 			width: 100%
+
+// 	#list-logo
+// 		padding: 0
+// 		>ol
+// 			grid-template-columns: repeat(auto-fill, 100%)
+// 			>li
+// 				width: 100%
+// 				margin: 0 0% 1.5rem
 
 
