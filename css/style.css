@@ -872,7 +872,7 @@ body.lock {
   height: 4rem;
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  background: url(../img/icon-close.svg) no-repeat center;
+  background: url(../img/icon-close.svg) no-repeat center #eee;
   border: 0.1rem solid #000;
   background-size: 45%;
   border-radius: 50%;
@@ -1049,6 +1049,7 @@ body.lock {
     border: 1px solid #000;
     border-radius: 50rem;
     padding-top: 0.8rem;
+    background-color: #eee;
   }
   #mo_menu > div {
     width: 55%;
@@ -1060,7 +1061,7 @@ body.lock {
     transition: 0.2s;
   }
   #g-nav {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 100%;
     width: 100%;
