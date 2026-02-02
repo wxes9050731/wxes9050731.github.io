@@ -1146,4 +1146,16 @@ body.lock {
   .detail-page .mo-profile img {
     width: 40%;
   }
+  .img-row-4 img {
+    width: 100%;
+  }
+  .img-row-3 img {
+    width: 100%;
+  }
+  [class^=img-row-] {
+    margin-bottom: 1rem;
+  }
+  .detail-page .pc-profile {
+    margin-bottom: 2rem;
+  }
 }
