@@ -1140,4 +1140,10 @@ body.lock {
     width: 100%;
     margin-bottom: 0.1rem;
   }
+  .w80, .w90 {
+    width: 100%;
+  }
+  .detail-page .mo-profile img {
+    width: 40%;
+  }
 }
